@@ -1,4 +1,7 @@
-use laboratorio;
+// Este script es un seeder para insertar 10.000 documentos de ejemplo en la coleccion "experimentos"
+// de la base de datos "laboratiorio", simulando datos de experimentos con diferentes tipos, valores, timestamps y ubicaciones.
+
+use('laboratorio');
 
 for (let i = 0; i < 10000; i++) {
     db.experimentos.insertOne({

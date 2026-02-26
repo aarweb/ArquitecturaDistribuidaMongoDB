@@ -23,3 +23,6 @@ monitorRS();
 // docker exec -it mongo1 mongosh --file /dev/stdin < monitor.js
 // Si da error de TTY
 // docker exec mongo1 mongosh --quiet --file /dev/stdin < monitor.js
+
+// Se usa /dev/stdin ya que se usa para leer el script desde la consola y no desde un archivo de contenedor
+// /dev/stdin es un archivo especial que representa la entrada estándar. 
